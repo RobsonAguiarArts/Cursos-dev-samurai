@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casas decimais - formatação e arredondamento </title>
+</head>
+<style>
+  a {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(34, 34, 36);
+  }
+</style>
+
+<body>
+  <script>
+    //toFixed()
+    // Math.ceil()
+    // math.floor()
+    // math.round()
+    // new Intl.NumberFormat().format()
+    let value = 1234.35
+    console.log(value.toFixed(1))
+    console.log(Math.ceil(value))
+    console.log(Math.floor(value))
+    console.log(Math.round(value))
+
+    console.log(
+      new Intl.NumberFormat("en-BR", {
+        style: "currency",
+        currency: "BRL",
+      }).format(value)
+    )
+  </script>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat" target="_blank">api number Format</a>
+</body>
+
+</html>

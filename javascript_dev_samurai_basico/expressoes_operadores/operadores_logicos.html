@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operadores Lógicos</title>
+</head>
+
+<body>
+  <script>
+    // OR quando comparado qualquer expressão com valor true retorna true
+    console.log(false || false) //false
+    console.log(true || false) //true
+    console.log(false || true)//true
+    console.log(true || true)//true
+    // AND quando comparado qualquer expressão com valor false retorna false
+    console.log(false && false) //false
+    console.log(true && false) //false
+    console.log(false && true)//false
+    console.log(true && true)//true
+    // 2 + Misto
+    console.log(false && false && true)// false
+    console.log(false || false || true)// true
+    console.log(false || (false && true)) // false
+    console.log((false || true) && true) // true
+
+    // Operador NOT 
+
+    console.log(!false) // true
+    console.log(!true) // false
+    console.log(!(23 < 24)) // false
+
+    // Resultado de uma expressão (comparação) é boolean
+
+    console.log(23 < 24 && "A" == "A") // true 
+
+    // Exemplos
+
+    console.log("------------")
+    console.log((1 < 2) || (2 > 4)) //true || false  = true
+    console.log((1 > 2) || (3 > 4)) // false || false = false
+    console.log((10 < 20) && (20 < 30)) // true && true = true
+    console.log((20 < 30) && (30 > 40)) // true && fasle = false
+    console.log((20 < 30) && !(30 > 40)) // true && true = true
+
+    // Variáveis 
+
+    let a = 10
+    let b = 20
+    let c = 30
+    console.log(a < b) && (b < c) // true && true = true
+
+  </script>
+</body>
+
+</html>

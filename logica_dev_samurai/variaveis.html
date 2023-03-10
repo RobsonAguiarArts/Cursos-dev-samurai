@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variáveis</title>
+</head>
+
+<body>
+  <script>
+    // Ler os dados do teclado: 
+    // Calcular o IMC peso / (peso * altura)
+    // Exibir os dados na tela : alert
+    alert('Vamos calcular o seu IMC !');
+    var peso = prompt('Entre com o valor do seu peso');
+    var altura = prompt('Entre com o valor da sua altura');
+    var imc = peso / (altura * altura);
+    alert(`O imc é: ${imc.toFixed
+      (1)}`);
+    if (imc <= 25) {
+      alert('Seu imc é muito baixo')
+    } else {
+      alert('Seu IMC é muito alto')
+    }
+
+
+  </script>
+</body>
+
+</html>

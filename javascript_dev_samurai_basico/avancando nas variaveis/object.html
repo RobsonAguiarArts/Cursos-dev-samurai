@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object</title>
+</head>
+
+<body>
+  <script>
+    const person = {
+      name: "Robson",
+      age: 35,
+      address: {
+        street: "Av. Central",
+        city: "São caetano do Sul",
+      },
+    }
+    person.name = "Pedro";
+    person.hairColor = "Black"
+
+    console.log(person)
+    console.log(person.name);
+    console.log(person.age);
+    console.log(person.hairColor);
+
+    console.log(`${person.name} tem ${person.age} anos e reside em ${person.address.city}.`);
+
+
+  </script>
+</body>
+
+</html>

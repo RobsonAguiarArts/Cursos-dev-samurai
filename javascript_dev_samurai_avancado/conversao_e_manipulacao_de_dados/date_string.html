@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date <-> String </title>
+</head>
+
+<body>
+  <script>
+    //'30/04/2022' <-> Date
+
+    //Date -> formato ISO
+    console.log(new Date('04/30/2022 12:00'))
+    console.log(new Date('2022-04-25 12:00'))
+    console.log(new Date('2022 04 30 12:00'))
+
+    console.log(new Date().toISOString()) // recomendado
+  </script>
+</body>
+
+</html>

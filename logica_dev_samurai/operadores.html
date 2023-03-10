@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operadores</title>
+</head>
+
+<body>
+  <script>
+    // precedência "() ** * / + -"
+    var media = (10 + 8 + 12) / 3;
+    console.log(media);
+
+    //calcule o gasto em reais da viagem usando alcool e tambem usando gasolina
+
+    var precoGasolinaLt = 2.99;
+    var precoAlcoolLt = 1.99;
+    var tanqueCarroLt = 200;
+    var LitrosGasolinaPorHora = 10;
+    var LitrosAlccolPorHora = 5;
+    var kmViagem = 500;
+
+    var viagemGasolina = kmViagem * precoGasolinaLt;
+    var viagemAlcool = kmViagem * precoAlcoolLt;
+    console.log(`O carro pode fazer a viagem de ${kmViagem}km gastando R$${viagemGasolina.toFixed(2)} de gasolina ou R$${viagemAlcool.toFixed(2)} de alcool.`)
+
+
+  </script>
+</body>
+
+</html>
