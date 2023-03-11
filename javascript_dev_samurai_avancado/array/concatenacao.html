@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concatenação</title>
+</head>
+
+<body>
+  <script>
+    let set1 = [1, 2, 3, 4, 5]
+    let set2 = [6, 7, 8, 9, 10]
+    let set3 = [11, 12]
+    console.log(typeof (`${set1} ${set2}`))// cria uma string (coersion)
+    console.log([set1, set2]) // cria um novo array com 2 sub-arrays dentro
+    let setAll = (set1.concat(set2).concat(set3)) // cria um novo array concatenado / somado
+    console.log(setAll.length)
+  </script>
+</body>
+
+</html>
