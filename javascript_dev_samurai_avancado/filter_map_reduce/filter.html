@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filter</title>
+</head>
+
+<body>
+  <script>
+    const numbers = [10, 18, 1, 15]
+    // let res = []
+    // for (const n of numbers) {
+    //   if (n > 10) {
+    //     res.push(n)
+    //   }
+    // }
+    // const gt10 = function (item) {
+    //   return item > 10 // true / false
+    // }
+    let resp = numbers.filter((n) => n > 10)
+    console.log(resp)
+
+    const people = [
+      { name: "Robson", gender: "M", age: 35 },
+      { name: "Paulo", gender: "M", age: 13 },
+      { name: "Viviany", gender: "F", age: 18 },
+    ]
+
+    let m = people.filter((p) => p.age >= 18)
+    console.log(m)
+    const gen = people.filter((p) => p.age >= 18 && p.gender === "M")
+    console.log(gen)
+    let age = people.filter((p) => p.age >= 18 && p.age <= 25 && p.gender === "M")
+    console.log(age)
+
+  </script>
+</body>
+
+</html>
