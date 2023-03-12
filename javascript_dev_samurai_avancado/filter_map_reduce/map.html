@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map</title>
+</head>
+
+<body>
+  <script>
+    const numbers = [1, 2, 3, 4, 5,]
+    const double = numbers.map((n) => n * 2) // retorna um aray novo com a função que você criar
+    console.log(double)
+
+    const fahrenheit = [0, 32, 45, 46, 47, 91, 93, 121]
+    const celcius = fahrenheit.map((t) => Math.round(((t - 32) * 5) / 9))// retorna um aray novo com a função que você criar
+    console.log(celcius)
+
+
+    const people = [
+      { name: "Robson", age: 18 },
+      { name: "Ana", age: 18 },
+      { name: "Mônica", age: 18 },
+    ]
+
+    const peopleNormalized = people.map((p) => p.name.toUpperCase())// ótimo para trabalhar com APIS
+    console.log(peopleNormalized)
+  </script>
+</body>
+
+</html>
